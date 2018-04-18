@@ -1,4 +1,4 @@
-//Wubin Peco, Max Millar, Bo Lu
+//BUBA - Wubin Peco, Max Millar, Bo Lu
 //APCS-2 pd02
 //LAB xx
 
