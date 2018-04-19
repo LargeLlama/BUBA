@@ -11,13 +11,13 @@ Other possible consideration: doubly-linked list
 1. [x] Finalize which collection-type we will use 
 	- We will use a LList that we have made in HW25
 2. [x] work through the Deque interface method by method
-	[x] addFirst() - use the add at index 0
-	[x] addLast() - use the add() method
-	[x] removeFirst() - remove() at index 0
-	[x] removeLast() - remove() at index size [x] 1
-	[x] getFirst() - get() index 0
-	[x] getLast() - get() index size - 1
-	[x] isEmpty() - return size == 0
+	[x] addFirst() - use the add at index 0  
+	[x] addLast() - use the add() method  
+	[x] removeFirst() - remove() at index 0  
+	[x] removeLast() - remove() at index size - 1    
+	[x] getFirst() - get() index 0  
+	[x] getLast() - get() index size - 1  
+	[x] isEmpty() - return size == 0  
 3. Once basic methods confirmed to work, begin work on "special value methods" as indicated in Java API  
 4. $$$$$
 
