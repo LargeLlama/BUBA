@@ -49,21 +49,36 @@ public class QQKachoo<D> implements Deque<D> {
 	}
 	public static void main (String[] args) {
 		Deque<String> gummo = new QQKachoo<String>();
+		//testing addFirst and addLast
 		gummo.addFirst("Yeet");
 		gummo.addFirst("Yote");
 		gummo.addLast("Yate");
-		System.out.println(gummo);
+		gummo.addLast("Yute");
+		gummo.addFirst("Yite");
 
-		Deque<String> copy = gummo;
-
+		System.out.println("gummo: " + gummo + "\n");
+		
+		System.out.println("TESTING removeFirst()");
+		//testing removeFirst()
 		while(!gummo.isEmpty()){
 			System.out.println(gummo.removeFirst());
 		}
 
-		System.out.println("Gummo: " + gummo);
-		System.out.println("Copy of gummo: " + copy);
-		while(!copy.isEmpty())
+		gummo.addFirst("Yeet");
+		gummo.addFirst("Yote");
+		gummo.addLast("Yate");
+		gummo.addLast("Yute");
+		gummo.addFirst("Yite");
+
+		System.out.println("gummo: " + gummo + "\n");
+
+		System.out.println("TESTING removeLast()");
+		//testing removeLast()
+		while(!gummo.isEmpty()){
 			System.out.println(gummo.removeLast());
+		}
+
+		
 	}
 }
 
