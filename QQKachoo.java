@@ -2,6 +2,7 @@
 //APCS-2 pd02
 //LAB 02
 
+import dll.LList;
 public class QQKachoo<D> implements Deque<D> {
 	
 	private LList<D> _buba;
