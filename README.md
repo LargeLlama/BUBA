@@ -23,10 +23,10 @@ Other possible consideration: doubly-linked list
 
 #### Development Plan  
 
-Our current state is a working Deque with the very basic Deque methods implemented, using an ArrayList to contain it.  
+~~Our current state is a working Deque with the very basic Deque methods implemented, using an ArrayList to contain it.  
 
 We are still not sure if this is the most effective way to go about implementing Deque, and as a result we will consider other options, specificially the doubly-linked list.  
 
 We did notice that the doubly-linked list has built-in methods for addFirst() and whatnot, which may be a point of interest in looking at and confirming that they work as we expect them to.  
 
-Currently, with our setup, add and removing at the beginning results in a runtime that isn't constant, which is why we are looking into other options.
+Currently, with our setup, add and removing at the beginning results in a runtime that isn't constant, which is why we are looking into other options.~~
