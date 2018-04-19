@@ -19,4 +19,5 @@ public interface Deque<Card> {
 	public boolean isEmpty();
 
 	//adding special value methods later
+	//THIS IS WHERE THE SPECIAL VALUE METHODS GO
 }
