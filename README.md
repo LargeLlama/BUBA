@@ -30,3 +30,8 @@ Other possible consideration: doubly-linked list
 ~~We did notice that the doubly-linked list has built-in methods for addFirst() and whatnot, which may be a point of interest in looking at and confirming that they work as we expect them to.~~  
 
 ~~Currently, with our setup, add and removing at the beginning results in a runtime that isn't constant, which is why we are looking into other options.~~  
+
+##### SIKE  
+We ended up using a doubly-linked list, but the implementation was the same. We find that the runtime is constant for this case as the shifting of the entire collection is not necessary when removing or adding at the beginning - the only time a doubly-linked list won't have a constant runtime is when one must add in the middle of the collection, but that is never the case in the Deque.  
+
+We only have to worry about the beginning and the end of the collection, which is about as easy as simply setting the next node or the previous node to null. 
