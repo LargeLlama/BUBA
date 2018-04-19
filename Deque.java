@@ -16,5 +16,7 @@ public interface Deque<Card> {
 
 	public Card getLast();
 
+	public boolean isEmpty();
+
 	//adding special value methods later
 }

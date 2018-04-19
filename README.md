@@ -8,8 +8,16 @@ Other possible consideration: doubly-linked list
 
 
 #### To-Do list
-1. Finalize which collection-type we will use  
-2. Code the basic methods necessary  
+1. [x] Finalize which collection-type we will use 
+	- We will use a LList that we have made in HW25
+2. [ ] work through the Deque interface method by method
+	- addFirst() - use the add at index 0
+	- addLast() - use the add() method
+	- removeFirst() - remove() at index 0
+	- removeLast() - remove() at index size - 1
+	- getFirst() - get() index 0
+	- getLast() - get() index size - 1
+	- isEmpty() - return size == 0
 3. Once basic methods confirmed to work, begin work on "special value methods" as indicated in Java API  
 4. $$$$$
 

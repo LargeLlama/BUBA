@@ -1,22 +1,17 @@
 //BUBA - Wubin Peco, Max Millar, Bo Lu
 //APCS-2 pd02
-//LAB xx
-
-import java.util.ArrayList;
+//LAB 02
 
 public class QQKachoo<D> implements Deque<D> {
 	
-	private ArrayList<D> _buba;
+	private LList<D> _buba;
 	
 	public QQKachoo() {
-		_buba = new ArrayList<D>();
+		_buba = new LList<D>();
 	}
 
 	//constructor for constrained Deque
 	//to be completed later
-	public QQKachoo(int size) {
-		_buba = new ArrayList<D>(size);
-	}
 	
 	public void addFirst(D value) {
 		if (_buba.size() > 0)
@@ -45,6 +40,9 @@ public class QQKachoo<D> implements Deque<D> {
 		return _buba.get(_buba.size() - 1);
 	}
 
+	public boolean isEmpty() {
+		return _buba.size() == 0;
+	}
 	@Override
 	public String toString() {
 		return _buba.toString();
@@ -55,6 +53,17 @@ public class QQKachoo<D> implements Deque<D> {
 		gummo.addFirst("Yote");
 		gummo.addLast("Yate");
 		System.out.println(gummo);
+
+		Deque<String> copy = gummo;
+
+		while(!gummo.isEmpty()){
+			System.out.println(gummo.removeFirst());
+		}
+
+		System.out.println("Gummo: " + gummo);
+		System.out.println("Copy of gummo: " + copy);
+		while(!copy.isEmpty())
+			System.out.println(gummo.removeLast());
 	}
 }
 
