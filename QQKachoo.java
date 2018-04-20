@@ -14,7 +14,7 @@ public class QQKachoo<D> implements Deque<D> {
     //constructor for constrained Deque
     //to be completed later
 
-    //add given argument to the front of the Dequeue
+    //add given argument to the front of the Deque
     public void addFirst(D value) {
 	if (_buba.size() > 0)
 	    _buba.add(0, value);
@@ -22,32 +22,32 @@ public class QQKachoo<D> implements Deque<D> {
 	    _buba.add(value);
     }
     
-    //add given argument to the back of the Dequeue
+    //add given argument to the back of the Deque
     public void addLast(D value) {
 	_buba.add(value);
     }
     
-    //remove the value at the front of the Dequeue
+    //remove the value at the front of the Deque
     public D removeFirst() {
 	return _buba.remove(0);
     }
 
-    //removes the value at the end of the Dequeue
+    //removes the value at the end of the Deque
     public D removeLast() {
 	return _buba.remove(_buba.size() - 1);
     }
 
-    //returns the value at the front of the Dequeue
+    //returns the value at the front of the Deque
     public D getFirst() {
 	return _buba.get(0);
     }
 
-    //returns the value at the end of the Dequeue
+    //returns the value at the end of the Deque
     public D getLast() {
 	return _buba.get(_buba.size() - 1);
     }
 
-    //returns whether or not the Dequeue is empty    public boolean isEmpty();
+    //returns whether or not the Deque is empty   
     public boolean isEmpty() {
 	return _buba.size() == 0;
     }
