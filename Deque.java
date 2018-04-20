@@ -3,20 +3,27 @@
 //LAB xx
 
 public interface Deque<Card> {
-	
-	public void addFirst(Card value);
-	
-	public void addLast(Card value);
 
-	public Card removeFirst();
+    //add given argument to the front of the Dequeue
+    public void addFirst(Card value);
 
-	public Card removeLast();
+    //add given argument to the back of the Dequeue 
+    public void addLast(Card value);
 
-	public Card getFirst();
+    //remove the value at the front of the Dequeue
+    public Card removeFirst();
 
-	public Card getLast();
+    //removes the value at the end of the Dequeue    
+    public Card removeLast();
 
-	public boolean isEmpty();
+    //returns the value at the front of the Dequeue
+    public Card getFirst();
 
-	//adding special value methods later
+    //returns the value at the end of the Dequeue
+    public Card getLast();
+
+    //returns whether or not the Dequeue is empty
+    public boolean isEmpty();
+
+    //adding special value methods later
 }

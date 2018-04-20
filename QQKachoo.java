@@ -5,81 +5,91 @@
 import dll.LList;
 public class QQKachoo<D> implements Deque<D> {
 	
-	private LList<D> _buba;
+    private LList<D> _buba;
 	
-	public QQKachoo() {
-		_buba = new LList<D>();
-	}
+    public QQKachoo() {
+	_buba = new LList<D>();
+    }
 
-	//constructor for constrained Deque
-	//to be completed later
+    //constructor for constrained Deque
+    //to be completed later
+
+    //add given argument to the front of the Dequeue
+    public void addFirst(D value) {
+	if (_buba.size() > 0)
+	    _buba.add(0, value);
+	else
+	    _buba.add(value);
+    }
+    
+    //add given argument to the back of the Dequeue
+    public void addLast(D value) {
+	_buba.add(value);
+    }
+    
+    //remove the value at the front of the Dequeue
+    public D removeFirst() {
+	return _buba.remove(0);
+    }
+
+    //removes the value at the end of the Dequeue
+    public D removeLast() {
+	return _buba.remove(_buba.size() - 1);
+    }
+
+    //returns the value at the front of the Dequeue
+    public D getFirst() {
+	return _buba.get(0);
+    }
+
+    //returns the value at the end of the Dequeue
+    public D getLast() {
+	return _buba.get(_buba.size() - 1);
+    }
+
+    //returns whether or not the Dequeue is empty    public boolean isEmpty();
+    public boolean isEmpty() {
+	return _buba.size() == 0;
+    }
+    
+    @Override
+    public String toString() {
+	return _buba.toString();
+    }
+
+    
+    public static void main (String[] args) {
+	Deque<String> gummo = new QQKachoo<String>();
+	//testing addFirst and addLast
+	gummo.addFirst("Yeet");
+	gummo.addFirst("Yote");
+	gummo.addLast("Yate");
+	gummo.addLast("Yute");
+	gummo.addFirst("Yite");
+
+	System.out.println("gummo: " + gummo + "\n");//expecting Yite, Yote, Yeet, Yate, Yute
 	
-	public void addFirst(D value) {
-		if (_buba.size() > 0)
-			_buba.add(0, value);
-		else
-			_buba.add(value);
-	} 
-	
-	public void addLast(D value) {
-		_buba.add(value);
+	System.out.println("TESTING removeFirst()");
+	//testing removeFirst()
+	while(!gummo.isEmpty()){
+	    System.out.println(gummo.removeFirst());
 	}
 
-	public D removeFirst() {
-		return _buba.remove(0);
+	gummo.addFirst("Yeet");
+	gummo.addFirst("Yote");
+	gummo.addLast("Yate");
+	gummo.addLast("Yute");
+	gummo.addFirst("Yite");
+
+	System.out.println("gummo: " + gummo + "\n");
+
+	System.out.println("TESTING removeLast()");
+	//testing removeLast()
+	while(!gummo.isEmpty()){
+	    System.out.println(gummo.removeLast());
 	}
 
-	public D removeLast() {
-		return _buba.remove(_buba.size() - 1);
-	}
-
-	public D getFirst() {
-		return _buba.get(0);
-	}
-
-	public D getLast() {
-		return _buba.get(_buba.size() - 1);
-	}
-
-	public boolean isEmpty() {
-		return _buba.size() == 0;
-	}
-	@Override
-	public String toString() {
-		return _buba.toString();
-	}
-	public static void main (String[] args) {
-		Deque<String> gummo = new QQKachoo<String>();
-		//testing addFirst and addLast
-		gummo.addFirst("Yeet");
-		gummo.addFirst("Yote");
-		gummo.addLast("Yate");
-		gummo.addLast("Yute");
-		gummo.addFirst("Yite");
-
-		System.out.println("gummo: " + gummo + "\n");
 		
-		System.out.println("TESTING removeFirst()");
-		//testing removeFirst()
-		while(!gummo.isEmpty()){
-			System.out.println(gummo.removeFirst());
-		}
-
-		gummo.addFirst("Yeet");
-		gummo.addFirst("Yote");
-		gummo.addLast("Yate");
-		gummo.addLast("Yute");
-		gummo.addFirst("Yite");
-
-		System.out.println("gummo: " + gummo + "\n");
-
-		System.out.println("TESTING removeLast()");
-		//testing removeLast()
-		while(!gummo.isEmpty()){
-			System.out.println(gummo.removeLast());
-		}
-
-		
-	}
+    }
 }
 
