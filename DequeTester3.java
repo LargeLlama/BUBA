@@ -1,4 +1,4 @@
-public class DequeTester2{
+public class DequeTester3{
   public static void main(String[] args) {
     QQKachoo<String> iscream = new QQKachoo<String>();
 
