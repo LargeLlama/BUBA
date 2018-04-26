@@ -6,7 +6,8 @@ import dll.LList;
 public class QQKachoo<D> implements Deque<D> {
 	
     private LList<D> _buba;
-	
+
+    //constructor for our Deque implementation -- utilizes a doubly linked list
     public QQKachoo() {
 	_buba = new LList<D>();
     }
